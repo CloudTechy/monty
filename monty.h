@@ -68,4 +68,6 @@ void add_node(stack_t **head, int n);
 void add_queue(stack_t **head, int n);
 void func_queue(stack_t **head, unsigned int counter);
 void func_stack(stack_t **head, unsigned int counter);
+void func_pint(stack_t **head, unsigned int counter);
+void func_pop(stack_t **head, unsigned int counter);
 #endif /* _MONTY_H */

@@ -20,6 +20,8 @@ int op_execute(char *content_buffer, stack_t **stack,
 	instruction_t opcode_stack[] = {
 		{"push", func_push},
 		{"pall", func_pall},
+		{"pint", func_pint},
+		{"pop", func_pop},
 		{NULL, NULL}
 	};
 	unsigned int i = 0;
