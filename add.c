@@ -24,7 +24,8 @@ void func_add(stack_t **head, unsigned int counter)
 		exit(EXIT_FAILURE);
 	}
 	dum = *head;
-	dum_n = dum->n;
-	dum->n = dum->next->n;
+	dum_n = dum->n + dum->next->n;
 	dum->next->n = dum_n;
+	*head = dum->next;
+	free(dum);
 }
