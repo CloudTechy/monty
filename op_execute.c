@@ -25,6 +25,7 @@ int op_execute(char *content_buffer, stack_t **stack,
 		{"swap", func_swap},
 		{"add", func_add},
 		{"nop", func_nop},
+		{"sub", func_sub},
 		{NULL, NULL}
 	};
 	unsigned int i = 0;

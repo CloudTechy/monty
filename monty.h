@@ -62,7 +62,8 @@ stack_t *global_stack; /* Global stack variable */
 
 void func_push(stack_t **stack, unsigned int line_number);
 void func_pall(stack_t **stack, unsigned int line_number);
-int op_execute(char *content_buffer, stack_t **head, unsigned int counter, FILE *file_pointer);
+int op_execute(char *content_buffer, stack_t **head,
+		unsigned int counter, FILE *file_pointer);
 void free_stack(stack_t *head);
 void add_node(stack_t **head, int n);
 void add_queue(stack_t **head, int n);
@@ -73,4 +74,5 @@ void func_pop(stack_t **head, unsigned int counter);
 void func_swap(stack_t **head, unsigned int counter);
 void func_add(stack_t **head, unsigned int counter);
 void func_nop(stack_t **head, unsigned int counter);
+void func_sub(stack_t **head, unsigned int counter);
 #endif /* _MONTY_H */
