@@ -72,4 +72,5 @@ void func_pint(stack_t **head, unsigned int counter);
 void func_pop(stack_t **head, unsigned int counter);
 void func_swap(stack_t **head, unsigned int counter);
 void func_add(stack_t **head, unsigned int counter);
+void func_nop(stack_t **head, unsigned int counter);
 #endif /* _MONTY_H */
